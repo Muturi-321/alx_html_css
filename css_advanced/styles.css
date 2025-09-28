@@ -1,1 +1,379 @@
+html,body{
+    height:100%;
+}
 
+body{
+  margin:0;
+  font-family:'Source-Sans-Serif';
+  color: #042033;
+  background: #f6fbff; /* very light background for pages */
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* ---------- Header / Nav ---------- */
+header{
+    position:relative;
+    background: radial-gradient(circle at 50% 5%, rgba(7,22,41,0.85) 0%, rgba(7,22,41,0.98) 45%, rgba(7,22,41,1) 100%);
+}
+
+nav{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:22px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+.list1{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin:0;
+}
+
+.list1 .link1 a{
+    text-size-adjust: 80px;
+    letter-spacing:0.6px;
+    text-transform:uppercase;
+    padding:8px 10px;
+    transition:all .15s ease-in-out;
+}
+
+
+/* ---------- Hero (section1) ---------- */
+.section1{
+    /* dark hero with radial effect (lighter at top) */
+    background: radial-gradient(circle at 50% 5%, rgba(7,22,41,0.85) 0%, rgba(7,22,41,0.98) 45%, rgba(7,22,41,1) 100%);
+    color: #eaf6ff;
+}
+
+
+/* left hero content */
+.div1{
+    display: flex;
+    height: 250px;
+}
+
+.div1 h1{
+    display: flexbox;
+    /* justify-content: center; */
+    justify-self:right;
+    font-size:clamp(42px,6vw,84px);
+    color:#ffffff;
+
+}
+
+.span{
+    display: flexbox;
+    padding: 20px;
+    align-self: center;
+}
+
+button.register{
+    display:flexbox;
+    background-color: #C271FF;
+    color: #eaf6ff;
+    border:none;
+    padding:14px 22px;
+    border-radius:999px;
+    font-weight:800;
+    margin-top:22px;
+    cursor:pointer;
+    align-self: center;
+}
+
+
+/* right "learn from the pros" column */
+.section-pros{
+    background:transparent;
+    color:rgba(234,246,255,0.95);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-pros h2{
+    justify-c;
+    font-size:20px;
+}
+
+.section-pros > div{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+
+.profile-pics{
+    width:72px;
+    height:72px;
+    border-radius:100%;
+    object-fit:cover;
+    border:3px solid rgba(255,255,255,0.06);
+}
+
+.profile h3{
+    font-size:14px;
+    margin:8px 0 4px;
+    color:rgba(255,255,255,0.95);
+}
+
+.profile p{
+    font-size:12px;
+    color:rgba(255,255,255,0.7);
+    margin:0;
+}
+
+/* ---------- Testimonial section ---------- */
+.testimonial{
+    display: flex;
+    max-width:var(--max-width);
+    background-color: #C271FF;
+    margin:48px auto;
+    padding:50px;
+    gap:28px;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.testimonial img{
+    width:120px;
+    height:120px;
+    border-radius:16px;
+    object-fit:cover;
+    
+}
+
+.testimonial blockquote{
+    font-style:italic;
+    font-size:20px;
+    color: white;
+    margin:0 0 10px;
+    line-height:1.35;
+    padding-left:8px;
+    padding-bottom: 20px;
+    border-left:4px solid rgba(7,22,41,0.06);
+    width: 490px;
+    text-align: left;
+}
+
+.testimonial h3{
+    margin:6px 0 0;
+    font-size:16px;
+    text-align: left;
+    color: white;
+}
+
+.testimonial p{
+    margin:0;
+    text-align: left;
+    color: white;
+}
+
+/* ---------- Tutorials grid (cards) ---------- */
+.tutorials{
+  max-width:var(--max-width);
+  margin:5px auto;
+  padding:20px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  align-items:start;
+}
+
+.tutorials h2{
+    flex-basis:100%;
+    font-size:26px;
+    margin-bottom:8px;
+    color:var(--text-dark);
+    text-align: center;
+}
+
+.tutorials > div{
+  flex:1;
+  min-width:220px;
+  background:#ffffff;
+  color:var(--text-dark);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 8px 20px rgba(8,23,32,0.06);
+}
+
+
+.tutorials > div h3{
+    margin:12px 0 8px;
+    font-size:18px;
+}
+
+.tutorials > div p{
+    margin:0 0 8px;
+    color:#6b7e8a;
+    font-size:14px;
+}
+
+.card-author{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:10px 0;
+}
+
+.card-author img{
+    width:36px;
+    height:36px;
+    border-radius:100%;
+    object-fit:cover;
+}
+
+.card-author h4{
+    margin:0;
+    font-size:14px;
+    color: #C271FF;
+}
+
+.last{
+    color: #D8D8D8;
+}
+
+.stars{
+    display:flex;
+    gap:2px;
+}
+
+.stars i{
+    color:#C271FF;
+}
+
+.tutorials > div p.time{
+    color:#6b7e8a;
+    margin-top:10px;
+    font-weight:600;
+}
+
+/* ---------- Membership (features) ---------- */
+.membership{
+    max-width:var(--max-width);
+    margin:48px auto;
+    padding:20px;
+    background-color: #041725;
+}
+
+.membership h2{
+    font-size:26px;
+    color:white;
+    margin-bottom:12px;
+    text-align: center;
+}
+
+.membership > div{
+    display:inline-block;
+    vertical-align:top;
+    color: white;
+    width:calc(20%);
+    min-width:180px;
+    text-align:center;
+    border-radius:12px;
+    padding:10px;
+    margin-right:5px;
+}
+
+.membership > div img{
+    width:50px;
+    height:50px;
+    margin:6px auto;
+
+}
+
+/* .membership button.register{
+    margin-top:20px;
+    display: flexbox;
+} */
+
+/* ---------- F.A.Q ---------- */
+.faq{
+    max-width:var(--max-width);
+    margin:48px auto;
+    padding:20px
+}
+
+.faq h2{
+    font-size:36px;
+    color:var(--text-dark);
+    margin-bottom:20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 50;
+}
+
+/* style the columns that hold Q/A */
+.faq > div{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    text-align: center;
+}
+
+.faq > div > div{
+    flex:1 1 320px;
+}
+.faq h3{
+    cursor:pointer;
+    background:transparent;
+    padding:12px 8px;
+    border-radius:8px;
+    margin:12px 0 6px;
+    color:var(--text-dark);
+}
+
+.faq > div > div > div{
+    color:#4f616b;
+    padding:0 8px 16px;
+}
+
+.faq h3[aria-expanded="true"] + div{display:block}
+
+/* ---------- Footer ---------- */
+footer{
+    background: #041725;
+    color:#cfeaf9;
+    padding:36px 20px;
+}
+
+footer section{
+    max-width:var(--max-width);
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+footer img{
+    width:140px;
+}
+
+footer p{
+    margin:0;
+    color:rgba(255,255,255,0.6);
+}
+
+footer i{
+    font-size:20px;
+    margin-left:10px;
+}
